@@ -174,10 +174,10 @@
               "$ref": "#/definitions/Empty"
             },
             "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string",
-                "description": "URI that may access the resource"
-              },
+              // "Access-Control-Allow-Origin": {
+              //   "type": "string",
+              //   "description": "URI that may access the resource"
+              // },
               "Access-Control-Allow-Methods": {
                 "type": "string",
                 "description": "Method or methods allowed when accessing the resource"
