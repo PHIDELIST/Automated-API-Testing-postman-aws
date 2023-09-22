@@ -9,7 +9,6 @@ phases:
     runtime-versions:
       nodejs: 12
     commands: #https://learning.getpostman.com/docs/postman/collection-runs/command-line-integration-with-newman/
-      - nvm use 12
       - npm install -g newman
       - yum install -y jq
 
