@@ -6,9 +6,10 @@ env:
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 12
+
     commands: #https://learning.getpostman.com/docs/postman/collection-runs/command-line-integration-with-newman/
+      - apt-get update
+      - apt-get install -y nodejs npm
       - npm install -g newman
       - yum install -y jq
 
@@ -22,6 +23,8 @@ phases:
 
   build:
     commands:
+      - node -v
+      - npm -v
       - echo Build started on `date` from dir `pwd`
       - newman run PetStoreAPI.postman_collection.json --environment PetStoreAPIEnvironment.postman_environment.json -r junit
 
