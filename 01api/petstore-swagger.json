@@ -103,7 +103,7 @@
             "integration.request.querystring.page": "method.request.querystring.page",
             "integration.request.querystring.type": "method.request.querystring.type"
           },
-          "uri": "http://petstore-demo-endpoint.execute-api.com/petstore/pets",
+          "uri": "http://petstore-demo-endpoint.execute-api.com/petstor/pets",
           "passthroughBehavior": "when_no_match",
           "httpMethod": "GET",
           "type": "http"
@@ -512,6 +512,17 @@
         },
         "properties": {
           "description": "Method or methods allowed when accessing the resource"
+        }
+      },
+      {
+        "location": {
+          "type": "RESPONSE_HEADER",
+          "method": "*",
+          "statusCode": "200",
+          "name": "Access-Control-Allow-Origin"
+        },
+        "properties": {
+          "description": "URI that may access the resource"
         }
       },
       {
