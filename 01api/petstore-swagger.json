@@ -89,6 +89,7 @@
               }
             }
           }
+          
         },
         "x-amazon-apigateway-integration": {
           "responses": {
